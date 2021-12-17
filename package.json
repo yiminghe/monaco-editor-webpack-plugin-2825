@@ -1,0 +1,17 @@
+{
+  "name": "monaco-editor-2825",
+  "private": true,
+  "dependencies": {
+    "css-loader": "^6.5.1",
+    "monaco-editor": "0.31.1",
+    "monaco-editor-webpack-plugin": "7.0.1",
+    "style-loader": "^3.3.1",
+    "webpack": "5.x",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "clean":"rm -rf dist patched-dist",
+    "build":"webpack-cli",
+    "patched-build":"PATCH=1 webpack-cli"
+  }
+}
