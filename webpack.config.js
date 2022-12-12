@@ -7,7 +7,7 @@ const MonacoPlugin = process.env.PATCH ? PatchedP : P;
 
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './index.js',
   module: {
     rules: [
@@ -23,6 +23,5 @@ module.exports = {
   },
   plugins: [new MonacoPlugin({
     languages: ['typescript'],
-    features: ['accessibilityHelp'],
   })],
 };
